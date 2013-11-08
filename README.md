@@ -3,6 +3,10 @@
 
 This plugin adds Simplify Commerce as a payment option on your VirtueMart checkout page.
 
+Ref: https://www.simplify.com/commerce/
+
+Ref: http://virtuemart.net/
+
 ## Installation
 1/ Download this module as a ZIP file, unpack it and run the ant build script provided.
 
