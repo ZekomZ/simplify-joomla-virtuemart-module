@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" method="upgrade">
+    <name>Simplify Commerce</name>
+    <creationDate>31 October 2013</creationDate>
+    <author>MasterCard</author>
+    <authorUrl>http://www.simplify.com</authorUrl>
+    <copyright>Copyright (C) 2013.</copyright>
+    <license></license>
+    <version>1.0.0</version>
+    <description>
+        <![CDATA[
+            <div>
+                <h3>Simplify Commerce Virtuemart Plugin 1.0.0</h3>
+                <p>To enable payments with Simplify Commerce on the Administrator screen:<p/>
+                <ul>
+                    <li>Select 'VirtueMart' from the 'Components' menu</li>
+                    <li>From the 'Shop' sidebar menu option, select 'Payment Methods'</li>
+                    <li>Click the 'New' icon</li>
+                    <li>Enter a Payment name, select the 'Yes' Published radio button and choose 'Simplify Commerce' from the 'Payment Method' dropdown and then click the 'Save' icon</li>
+                    <li>Click the 'Configuration' tab and then set your API Keys and click the 'Save' icon. (Your API keys can be retrieved from <a href='https://www.simplify.com/commerce/app#/account/apiKeys'>your Simplify account</a> once logged in)</li>
+                </ul>
+            </div>
+        ]]>
+    </description>
+    <scriptfile>install.simplifycommerce.php</scriptfile>
+    <files>
+        <filename plugin="simplifycommerce">simplifycommerce.php</filename>
+        <filename>lib/Simplify.php</filename>
+        <filename>lib/Simplify/AccessToken.php</filename>
+        <filename>lib/Simplify/Authentication.php</filename>
+        <filename>lib/Simplify/CardToken.php</filename>
+        <filename>lib/Simplify/Chargeback.php</filename>
+        <filename>lib/Simplify/Constants.php</filename>
+        <filename>lib/Simplify/Coupon.php</filename>
+        <filename>lib/Simplify/Customer.php</filename>
+        <filename>lib/Simplify/Deposit.php</filename>
+        <filename>lib/Simplify/Event.php</filename>
+        <filename>lib/Simplify/Exceptions.php</filename>
+        <filename>lib/Simplify/Http.php</filename>
+        <filename>lib/Simplify/Invoice.php</filename>
+        <filename>lib/Simplify/InvoiceItem.php</filename>
+        <filename>lib/Simplify/Object.php</filename>
+        <filename>lib/Simplify/Payment.php</filename>
+        <filename>lib/Simplify/PaymentsApi.php</filename>
+        <filename>lib/Simplify/Plan.php</filename>
+        <filename>lib/Simplify/Refund.php</filename>
+        <filename>lib/Simplify/ResourceList.php</filename>
+        <filename>lib/Simplify/Subscription.php</filename>
+        <filename>lib/Simplify/Webhook.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmjpluginwarning" />
+        <param type="spacer" default="&lt;h2&gt;Simplify Commerce&lt;/h2&gt;" level="level1"/>
+        <param type="spacer" default="If you have not done so already, you can &lt;a href='https://www.simplify.com/commerce/login/signup' target='_blank'&gt;register with Simplify Commerce&lt;/a&gt;." level="level1"/>
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="Please enter your Simplify Commerce API Keys:" level="level1" />
+        <param name="publicKey" type="text" size="80" default="" label="Public Key" description="Simplify Commerce Public Key" />
+        <param name="privateKey" type="text" size="80" default="" label="Private Key" description="Simplify Commerce Private Key" />
+    </params>
+</install>
