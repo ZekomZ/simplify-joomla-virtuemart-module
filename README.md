@@ -8,11 +8,11 @@ Ref: https://www.simplify.com/commerce/
 Ref: http://virtuemart.net/
 
 ## Installation
-1/ Download this module as a ZIP file, unpack it and run the ant build script provided.
+1/ Unzip the download and install the built module zip file (located in the 'dist' folder) through the Joomla admin panel.
 
-2/ Install the newly built module zip file (located in the 'dist' folder) through the Joomla admin panel.
+2/ Follow the instructions on-screen to add Simplify Commerce as a payment method to VirtueMart
 
-3/ Follow the instructions on-screen to add Simplify Commerce as a payment method to VirtueMart
+Optionally, you can build your own module zip file by executing an 'ant' command within the root directory. This will overwrite the existing module zip file.
 
 You can manage your Simplify account (view deposits, perform refunds etc.) using the Simplify dashboard at https://www.simplify.com/commerce/.
 
