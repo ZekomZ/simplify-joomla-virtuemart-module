@@ -8,7 +8,7 @@ Ref: https://www.simplify.com/commerce/
 Ref: http://virtuemart.net/
 
 ## Installation
-1/ Download a release (simplifycommerce.zip) from the menu option above and install the zip file through the Joomla admin panel.
+1/ If you haven't done so already, download a release (simplifycommerce.zip) from the menu option above and install the zip file through the Joomla admin panel.
 
 2/ Follow the instructions on-screen to add Simplify Commerce as a payment method to VirtueMart
 

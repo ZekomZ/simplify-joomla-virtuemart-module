@@ -40,7 +40,7 @@ SUCH DAMAGE.
     <delete dir="${build}/${project-name}/sdk"/>
     <zip destfile="${dist}/${project-name}.zip"
          basedir="${build}"
-	       includes="*.md **/*"
+         includes="*.md **/*"
          excludes="**/*.tgz"/>
   </target>
 
@@ -62,6 +62,9 @@ SUCH DAMAGE.
   <target name="prepare" description="Prepares the API and Plugin files">
     <copy todir="${build}/${project-name}">
       <fileset dir="src" />
+      <resources>
+        <file file="README.md"/>
+      </resources>
     </copy>
 
     <echo>Unpacking SDK</echo>
@@ -74,7 +77,7 @@ SUCH DAMAGE.
     <echo>DESTDIR ${sdk.lib.dir}</echo>
     <copy todir="${build}/${project-name}/lib">
        <fileset dir="${sdk.lib.dir}">
- 		<include name="**/*.php"/>
+    <include name="**/*.php"/>
        </fileset>
     </copy>
   </target>
